@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/forecastFragment">
+    <fragment
+        android:id="@+id/forecastFragment"
+        android:name="com.agutierrezt.weatherexample.ui.fragments.ForecastFragment"
+        android:label="@string/forecast_title"
+        tools:layout="@layout/fragment_forecast" />
+    <fragment
+        android:id="@+id/historicalFragment"
+        android:name="com.agutierrezt.weatherexample.ui.fragments.HistoricalFragment"
+        android:label="@string/historical_title"
+        tools:layout="@layout/fragment_historical" />
+</navigation>
